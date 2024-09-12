@@ -11,13 +11,13 @@
 
   
   const firebaseConfig = {
-    apiKey: "AIzaSyDtDQ21PoPj9pYs1t6lBFLUHAuzcJsWPQM",
-    authDomain: "sir-assignment-project.firebaseapp.com",
-    projectId: "sir-assignment-project",
-    storageBucket: "sir-assignment-project.appspot.com",
-    messagingSenderId: "776793860879",
-    appId: "1:776793860879:web:280b2f797ba1c21e372c7a",
-    measurementId: "G-H8NPMNEL2F"
+    apiKey: "AIzaSyCkOQfrkgXNnDfxkPWEhRrg-FiJpMavzZ8",
+    authDomain: "new-project--sir-basit.firebaseapp.com",
+    projectId: "new-project--sir-basit",
+    storageBucket: "new-project--sir-basit.appspot.com",
+    messagingSenderId: "976795702033",
+    appId: "1:976795702033:web:29a928b4b3d2718b53f2b0",
+    measurementId: "G-BYEZH62P2M"
   };
 
   // Initialize Firebase
