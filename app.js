@@ -6,9 +6,7 @@
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
    } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
+ 
   
   const firebaseConfig = {
     apiKey: "AIzaSyCkOQfrkgXNnDfxkPWEhRrg-FiJpMavzZ8",
@@ -30,4 +28,3 @@ const signup_password = document.getElementById("signup_password");
 const Signup_btn = document.getElementById("Signup_btn");
 
 Signup_btn.addEventListener("click" .createUserAccount);
- console.log(Signup_btn);
