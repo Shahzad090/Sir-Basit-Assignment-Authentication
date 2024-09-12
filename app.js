@@ -23,8 +23,3 @@
   const analytics = getAnalytics(app);
   const auth = getAuth(app);
   
-const signup_email = document.getElementById("signup_email");
-const signup_password = document.getElementById("signup_password");
-const Signup_btn = document.getElementById("Signup_btn");
-
-Signup_btn.addEventListener("click" .createUserAccount);
