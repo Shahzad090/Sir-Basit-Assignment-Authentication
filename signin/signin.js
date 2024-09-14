@@ -1,56 +1,56 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
-import {
-  getAnalytics,
-  onAuthStateChanged,
-  createUserWithEmailAndPassword,
-} from "https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCkOQfrkgXNnDfxkPWEhRrg-FiJpMavzZ8",
-  authDomain: "new-project--sir-basit.firebaseapp.com",
-  projectId: "new-project--sir-basit",
-  storageBucket: "new-project--sir-basit.appspot.com",
-  messagingSenderId: "976795702033",
-  appId: "1:976795702033:web:29a928b4b3d2718b53f2b0",
-  measurementId: "G-BYEZH62P2M",
+  apiKey: "AIzaSyDAYiyZhDX_l9CthgqC-yg0pPtoN7fJAyo",
+  authDomain: "form-e5426.firebaseapp.com",
+  projectId: "form-e5426",
+  storageBucket: "form-e5426.appspot.com",
+  messagingSenderId: "759286666550",
+  appId: "1:759286666550:web:e01c5ab9f618e16d34cf97",
+  measurementId: "G-8N8GGDKZFN"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const auth = getAuth(app);
-const Email = document.getElementById("Email");
-const Password = document.getElementById("Password");
-const Signin_btn = document.getElementById("Signin_btn");
 
-Signin_btn.addEventListener("click".createUserAccount);
+
+
 onAuthStateChanged(auth, (user) => {
-  if (user) {
-    console.log("user is login===>");
-
-    const uid = user.uid;
-    // ...
-  } else {
-    console.log("user is not login===>");
-  }
+if (user) {
+  const uid = user.uid;
+  
+} else {
+  
+}
 });
 
-function creatUserAccount() {
-  
-  
-  createUserWithEmailAndPassword(
-    auth,
-     email.value, 
-     password.value,
-    )
-    .then((userCredential) => {
-      const user = userCredential.user;
-      // console.log("user=>, user")
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      alert(errorMessage);
-    });
-}
+
+ const login_email = document.getElementById("login_email");
+ const login_password = document.getElementById("login_password");
+ const login_btn = document.getElementById("login_btn");
+ login_btn.addEventListener("click", login );
+
+
+ function login () {
+   signInWithEmailAndPassword(auth, login_email.value, login_password.value)
+   .then((userCredential) => {
+     const user = userCredential.user;
+     window.location.href = "interface.html";
+   })
+   .catch((error) => {
+     const errorCode = error.code;
+     const errorMessage = error.message;
+     alert(errorMessage)
+   });
+   
+ }
+
+
+
